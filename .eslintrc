@@ -1,0 +1,47 @@
+{
+  "env": {
+    "es2021": true,
+    "node": true,
+    "vue/setup-compiler-macros": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/vue3-strongly-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
+  },
+  "plugins": ["vue", "@typescript-eslint"],
+  "rules": {
+    "prettier/prettier": [
+      "warn",
+      {
+        "bracketSameLine": false,
+        "vueIndentScriptAndStyle": true,
+        "semi": true,
+        "singleQuote": false,
+        "tabWidth": 2
+      }
+    ]
+        //    "vue/max-len": ["warn", {
+//      "code": 80,
+//      "template": 80,
+//      "tabWidth": 2,
+//      "comments": 80,
+//      "ignorePattern": "",
+//      "ignoreComments": false,
+//      "ignoreTrailingComments": false,
+//      "ignoreUrls": false,
+//      "ignoreStrings": false,
+//      "ignoreTemplateLiterals": false,
+//      "ignoreRegExpLiterals": false,
+//      "ignoreHTMLAttributeValues": false,
+//      "ignoreHTMLTextContents": false
+//    }]
+  }
+}
